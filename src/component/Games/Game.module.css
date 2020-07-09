@@ -1,0 +1,10 @@
+.GameBox
+{
+    padding:10px 100px;
+    margin: 0 auto;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+

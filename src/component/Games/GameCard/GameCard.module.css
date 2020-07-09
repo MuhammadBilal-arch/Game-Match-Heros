@@ -1,0 +1,93 @@
+.GameSection
+{
+    width:100%;
+    height:100%;
+}
+
+.GameHeadRow
+{
+    margin:20px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.GameHeadRow h3
+{
+    padding:10px 0px;
+    box-sizing: border-box;
+    margin:15px 100px;
+    width:190px;
+    height:50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 4%;
+}
+
+.GameHeadRow h2
+{
+    padding:10px 0px;
+    width:300px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 1%;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.GameCardHead
+{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.GameCard:hover 
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+.GameCard
+{
+    text-align: center;
+    margin:15px 0px;
+    width:200px;
+    height:200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4%;
+    padding:10px 20px;
+    overflow: hidden;
+    outline: none;
+    border:none;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.GameCardDiv
+{
+    width:350px;
+    height:280px;
+    transform:rotate(45deg);
+    border: 20px solid red;
+    box-shadow: -10px 10px 20px 0px red ;
+    background-color:black; 
+    outline: none;   
+}
+
+.GameCard img
+{
+    margin-top:10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    outline: none;
+    box-shadow: 2px 2px 10px 5px  rgba(0, 0, 0, 0.5);
+}
+
