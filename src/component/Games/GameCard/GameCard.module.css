@@ -1,7 +1,7 @@
 .GameSection
 {
     width:100%;
-    height:100%;
+    height:585px;
 }
 
 .GameHeadRow
@@ -42,46 +42,71 @@
 
 .GameCardHead
 {
+    margin:0px 100px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    /* transform-style: preserve-3d; */
 }
-
-.GameCard:hover 
+/* .GaneCard:hover ,.GameCardArea:hover
 {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
-    transition: 1s;
-}
-
+        transform: rotateY(180deg);
+} */
 .GameCard
 {
-    text-align: center;
-    margin:15px 0px;
+    background-color: transparent;
+    border-radius: 4%;
     width:200px;
     height:200px;
-    background-color: rgba(0, 0, 0, 0.1);
+    margin:15px 0px;
+    perspective: 1000px;
+}
+.GameCardArea
+{
+    position:relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
     border-radius: 4%;
-    padding:10px 20px;
-    overflow: hidden;
+    transform-style: preserve-3d;
     outline: none;
     border:none;
-    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
-.GameCardDiv
+.GameCardBack
 {
-    width:350px;
-    height:280px;
-    transform:rotate(45deg);
-    border: 20px solid red;
-    box-shadow: -10px 10px 20px 0px red ;
-    background-color:black; 
-    outline: none;   
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width:100%;
+    height:100%;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border:none;
+    box-shadow: 2px 2px 10px 5px blueviolet;
+    backface-visibility: hidden;
 }
 
-.GameCard img
+.GameCardFront
+{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4%;
+    outline: none;
+    border:none;
+    transform: rotateY(360deg);
+    /* box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.9); */
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.GameCardFront img
 {
     margin-top:10px;
     width: 150px;
